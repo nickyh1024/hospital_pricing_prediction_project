@@ -8,6 +8,10 @@ validation, uncertainty communication, and a usable Streamlit demo.
 
 > Educational portfolio project only. It is not a clinical, billing, or pricing tool.
 
+[![Open the live Streamlit app](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://hospital-cost-estimator-nicky.streamlit.app/)
+
+**Live demo:** [hospital-cost-estimator-nicky.streamlit.app](https://hospital-cost-estimator-nicky.streamlit.app/)
+
 ## Why this project is worth discussing
 
 - **Business framing:** supports an early cost estimate when the patient arrives.
