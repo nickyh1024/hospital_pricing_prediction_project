@@ -1,0 +1,23 @@
+# Copy this file to .github/workflows/ci.yml when your GitHub token has workflow scope.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test-and-train:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install project
+        run: python -m pip install -e ".[dev]"
+      - name: Run tests
+        run: pytest -q
+      - name: Reproduce training pipeline
+        run: python -m hospital_pricing.train

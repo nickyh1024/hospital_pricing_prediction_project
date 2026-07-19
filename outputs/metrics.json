@@ -1,0 +1,35 @@
+{
+  "dataset_rows": 248,
+  "train_rows": 198,
+  "test_rows": 50,
+  "selected_model": "ridge",
+  "cross_validation": {
+    "median_baseline": {
+      "cv_mae_mean": 81082.68194205631,
+      "cv_mae_std": 8863.963236081894,
+      "cv_r2_mean": -0.006669638688883994
+    },
+    "ridge": {
+      "cv_mae_mean": 59045.648958838625,
+      "cv_mae_std": 6231.137309333856,
+      "cv_r2_mean": 0.31849800104642123
+    },
+    "random_forest": {
+      "cv_mae_mean": 60451.19783136317,
+      "cv_mae_std": 8887.17750279329,
+      "cv_r2_mean": 0.2906489105103928
+    }
+  },
+  "test": {
+    "mae": 60733.63011491336,
+    "rmse": 120577.2853510329,
+    "r2": 0.23549939047496016
+  },
+  "baseline_test": {
+    "mae": 83656.49431717172,
+    "rmse": 139313.03202619374,
+    "r2": -0.020540679440495424
+  },
+  "interval_90_half_width": 125904.70460843404,
+  "interval_test_coverage": 0.84
+}
